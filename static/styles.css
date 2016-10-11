@@ -81,7 +81,7 @@ body {
 	right: 98px;
 	margin-left: 5px;
 }
-#tags_cloud, #best_members, .ques_screen, .answ_screen {
+#tags_cloud, #best_members, .ques_screen, .answ_screen, #ask_ques_form {
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 11px;
@@ -190,7 +190,7 @@ a:hover, a:focus {
 	background-color: #F57C14;
 	border-color: black;
 }
-.answ_screen>input {
+.btn-submit {
 	/*float: right;*/
 	margin-top: 2px;
 	background-color: lightgreen;
@@ -207,6 +207,15 @@ a:hover, a:focus {
 	background-color: green;
 	border-color: darkgreen;
 }
-.answ_screen>textarea {
+textarea {
 	max-width: 100%;
+}
+#ask_ques_form {
+	padding: 5px;
+	margin: 10px 0px;
+	background-color: #ff9933;
+}
+#ask_ques_form input, #ask_ques_form textarea {
+	border-color: #000;
+	border-width: 1px;
 }

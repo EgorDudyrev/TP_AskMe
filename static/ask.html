@@ -63,87 +63,50 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-8 screen_part" id = "main_part">
-          <div class="ques_screen">
-            <div class="row">
-              <div class="col-xs-2">
-                <img src="../img/Avat64.jpg" class="img-polaroid">
-                UserName
-                <br>
-                <button class="btn btn-default btn-lg btn-like" type="submit">
-                  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>  
-                </button>
-                <button class="btn btn-default btn-lg btn-dlike" type="submit">
-                  <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>  
-                </button>
-              </div>
-              <div class="col-xs-10">
-                <h3><a class="quest-header" href="#">Question header</a></h3>
-                <a class="btn btn-default btn-xs btn-tag" href="#" role="button">Тэг 1</a>
-                <a class="btn btn-default btn-xs btn-tag" href="#" role="button">Тэг 2</a>
-                <a class="btn btn-default btn-xs btn-tag" href="#" role="button">Тэг 3</a>
-                <p>
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-                Ответы: <span class="badge">2</span>
-              </div>
-            </div>
-          </div>
 
-          <div class="answ_screen">
-            <div class="row">
-              <div class="col-xs-2">
-                <img src="../img/Avat64.jpg" class="img-polaroid">
-                UserName
-              </div>
-              <div class="col-xs-10">
-                <p>
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-                <button class="btn btn-default btn-lg btn-like" type="submit">
-                  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>  
-                </button>
-                <span class="badge">25</span>
-                <button class="btn btn-default btn-lg btn-dlike" type="submit">
-                  <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>  
-                </button>
-              </div>
-            </div>
-          </div>
+          <h2 style="text-align: center;  font-family: cursive;">Новый вопрос</h2>
 
-          <div class="answ_screen">
-            <div class="row">
-              <div class="col-xs-2">
-                <img src="../img/Avat64.jpg" class="img-polaroid">
-                UserName
+          <div id="ask_ques_form">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputTitle" class="col-sm-2 control-label">Заголовок</label>
+                <div class="col-sm-10">
+                  <input type="title" class="form-control" id="inputTitle" placeholder="Введите заголовок">
+                </div>
               </div>
-              <div class="col-xs-10">
-                <p>
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-                <button class="btn btn-default btn-lg btn-like" type="submit">
-                  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>  
-                </button>
-                <span class="badge">21</span>
-                <button class="btn btn-default btn-lg btn-dlike" type="submit">
-                  <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>  
-                </button>
+            
+              <div class="form-group">
+                <label for="inputQuesText" class="col-sm-2 control-label">Текст</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" id="inputQuesText" rows="3"></textarea>
+                </div> 
               </div>
-            </div>
-          </div>
 
-          <div class="answ_screen">
-            <textarea class="form-control" rows="4" placeholder="Введите Ваш ответ"></textarea>
-            <input class="btn btn-submit" type="submit" value="Отправить">
+              <div class="form-group">
+                <label for="inputTags" class="col-sm-2 control-label">Теги</label>
+                <div class="col-sm-10">
+                  <input type="tags" class="form-control" id="inputTags" placeholder="Введите тэги">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                  <button class="btn btn-submit">Задать вопрос</button>
+                </div>
+              </div>
+
+            </form>
           </div>
         </div>
 
-        
-
         <div class="col-xs-3 screen_part" id = "right_part">
+
           <h2 style="text-align: center;  font-family: cursive;">Популярные теги</h2>
           <div id="tags_cloud" class="screen_part">
             /*Tags cloud here*/
           </div>
+
           <h2 style="text-align: center;  font-family: cursive;">Лучшие участники</h2>
           <div id="best_members" class="screen_part">
             <ol>
