@@ -68,10 +68,6 @@ body {
 .navbar .dropdown-menu .divider {
 	background-color: #333;
 }
-#user_block {
-	font-size: 14px;
-	margin-left: 14px;
-}
 #main_part, #right_part {
 	margin-top: 10px;
 	text-align: justify;
@@ -85,7 +81,7 @@ body {
 	right: 98px;
 	margin-left: 5px;
 }
-#tags_cloud, #best_members, .ques_screen {
+#tags_cloud, #best_members, .ques_screen, .answ_screen {
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 11px;
@@ -112,6 +108,13 @@ body {
 	padding: 5px;
 	margin: 10px 0px;
 	background-color: #ff9933;
+}
+.answ_screen {
+	padding: 5px;
+	margin: 10px 0px;
+	background-color: #ff9933;
+	margin-left: 5%;
+	width: 90%;
 }
 .img-polaroid {
 	border-style: solid;
@@ -174,7 +177,8 @@ a:hover, a:focus {
 	color: #000;
 }
 .badge {
-	background-color: #999
+	background-color: #999;
+	color: #333;
 }
 .pagination>li>a {
 	background-color: #ff9933;
@@ -185,4 +189,24 @@ a:hover, a:focus {
 	color: #000;
 	background-color: #F57C14;
 	border-color: black;
+}
+.answ_screen>input {
+	/*float: right;*/
+	margin-top: 2px;
+	background-color: lightgreen;
+	border-width: 2px;
+	border-color: green;
+	color: #333;
+}
+.answ_screen>input:hover, .answ_screen>input:focus {
+	color: #000;
+	background-color: lightgreen;
+	border-color: green;
+}
+.answ_screen>input:active, .answ_screen>input:hover:active {
+	background-color: green;
+	border-color: darkgreen;
+}
+.answ_screen>textarea {
+	max-width: 100%;
 }
