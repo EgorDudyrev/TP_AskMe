@@ -7,9 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Веб-сервис вопросов и ответов">
     <meta name="author" content="Дудырев Егор">
-    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="../img/favicon.ico">
 
-    <title>Starter Template Ask_Gef</title>
+    <title>Template Ask_Gef</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -33,41 +33,59 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Ask_Gef</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <form class="navbar-form navbar-right">
-            <span class="form-ask" >
-              <input type="text" class="form-control" placeholder="Поиск">
-            </span>
-            <span>
-              <img src="../img/Avat34.jpg" class="img-polaroid">
-              <!-- Single button -->
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              UserName <span class="caret"></span>
-              </button>
+          <ul class="nav navbar-nav">
+            <li><div  class="form-ask"><input type="text" class="form-control" placeholder="Поиск"></div></li>
+            <li><a href="#">Задать вопрос</a></li>
+            <!--Для зарегестрированных пользователей
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <img src="../img/Avat32.jpg" class="img-polaroid"> UserName <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Настройки</a></li>
+                <li role="separator" class="divider"></li>
                 <li><a href="#">Выйти</a></li>
               </ul>
-              </div>
-            </span>
-          </form>
+            </li>-->
+            <!--Для незарегестрированных пользователей -->
+            <li><a href="#">Регистрация</a></li>
+            <li><a href="#">Вход</a></li>
+          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-
-<!--     <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      <div class="row">
+        <div class="col-xs-8 screen_part" id = "main_part">Main part</div>
+        <div class="col-xs-3 screen_part" id = "right_part">
+          <h2 style="text-align: center;  font-family: cursive;">Популярные теги</h2>
+          <div id="tags_cloud" class="screen_part">
+            /*Tags cloud here*/
+          </div>
+          <h2 style="text-align: center;  font-family: cursive;">Лучшие участники</h2>
+          <div id="best_members" class="screen_part">
+            <ol>
+              <li><a href="#">UserName1</a></li>
+              <li><a href="#">UserName2</a></li>
+              <li><a href="#">UserName3</a></li>
+              <li><a href="#">UserName4</a></li>
+              <li><a href="#">UserName5</a></li>
+              <li><a href="#">UserName6</a></li>
+              <li><a href="#">UserName7</a></li>
+              <li><a href="#">UserName8</a></li>
+              <li><a href="#">UserName9</a></li>
+              <li><a href="#">UserName10</a></li>
+            </ol>
+          </div>
+        </div>
       </div>
-
-    </div>--><!-- /.container -->
+    </div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
